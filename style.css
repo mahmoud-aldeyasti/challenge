@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+
+}
+body{
+    width: 100vw;
+    min-height: 100vh ;
+    text-align: center;
+    background-color: hsl(0 , 0% , 90%);
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+
+:root{
+    --create:#009080;
+    --result:#FC4A3B;
+}
+
+/* form */
+
+form{
+    margin-top: 20vh;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+
+
+input{
+    width: 40%;
+    padding: 5px 1px;
+    margin: 10px 0px;
+    font-size: 17px;
+
+
+}
+
+input[type='submit']{
+    background-color: var(--create);
+    color: white;
+    background-image: radial-gradient(#827373 1px , transparent 1px);
+    background-position: 0 0 ;
+    background-size: 5px 5px;
+}
+
+select{
+    width: 40%;
+    padding: 5px 1px;
+    margin: 10px 0px;
+    font-size: 17px;
+    
+
+}
+
+@media(max-width:1000px){
+    input{
+        width: 60%;
+    }
+    
+    select{
+        width: 60%;
+    }
+}
+
+.results{
+    display: grid;
+    grid-template-columns: repeat( auto-fit , 25vw);
+    justify-content: center;
+    padding: 2%;
+    margin-top: 5vh;
+    width: 100%;
+}
+
+
+.box{
+    background-color: var(--result);
+    padding: 3px;
+    color: white;
+    margin: 10px ;
+    background-image: radial-gradient(#827373 1px , transparent 1px);
+    background-position: 0 0 ;
+    background-size: 5px 5px;
+}
